@@ -8,11 +8,14 @@ if (isset($_GET['idbrand']) && isset($_GET['model']) && isset($_GET['year'])) {
     header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
     header('Content-Type: text/html; charset=utf-8');
 
+    $post = file_get_contents('php://input');
+    $post = json_decode($post, true);
+
     $delete = $conn->prepare("DELETE FROM car WHERE brand_idbrand=? AND model=? AND year=?");
 
-    $idbrand = $_GET['idbrand'];
-    $model = $_GET['model'];
-    $year = $_GET['year'];
+    $idbrand = $post['idbrand'];
+    $model = $post['model'];
+    $year = $post['year'];
 
     $delete->bind_param("isi", $idbrand, $model, $year);
 

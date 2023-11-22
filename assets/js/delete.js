@@ -10,12 +10,12 @@ erase.addEventListener('click', () => {
 
     const xhttp = new XMLHttpRequest();
 
-    xhttp.open("DELETE", `assets/php/delete.php?${new URLSearchParams(data).toString()}`);
+    xhttp.open("POST", `assets/php/delete.php`);
     xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     xhttp.onload = function () {
         console.log(xhttp.responseText);
     };
 
-    xhttp.send();
+    xhttp.send(JSON.stringify(data));
 });

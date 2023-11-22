@@ -14,7 +14,7 @@ update.addEventListener('click', () => {
 
     const xhttp = new XMLHttpRequest();
 
-    xhttp.open("PUT", 'assets/php/update.php');
+    xhttp.open("POST", 'assets/php/update.php');
     xhttp.setRequestHeader("Content-type", "application/json");
 
     xhttp.onload = function () {
