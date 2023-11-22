@@ -1,0 +1,15 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid hsl(300, 100%, 17%);
+}
+
+th,
+td {
+    padding: 1rem;
+}
+
+td {
+    text-align: center;
+}

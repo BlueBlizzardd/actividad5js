@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/select.js" defer></script>
+    <script src="assets/js/delete.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button type="button" class="btn btn-read">Mostrar Carros</button></li>
+                <li><a href="index.html" class="btn btn-create">Anadir Carros</a></li>
+                <li><a href="update.html" class="btn btn-update">Actualizar Carros</a></li>
+                <li><button type="button" class="btn btn-current">Eliminar Carros</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="results"></div>
+
+    <form id="deleteForm">
+        <label for="brandName">Marca:</label>
+        <select name="brandName" id="brandName">
+            <option value="1">Toyota</option>
+            <option value="2">Chevrolet</option>
+            <option value="3">Ford</option>
+            <option value="4">Tesla</option>
+        </select>
+        <label for="model">Modelo:</label>
+        <input type="text" id="model" name="model">
+        <label for="year">Año:</label>
+        <input type="date" id="year" name="year">
+        <button type="button" class="btn btn-delete">Eliminar</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/select.js" defer></script>
+    <script src="assets/js/insert.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button type="button" class="btn btn-read">Mostrar Carros</button></li>
+                <li><button type="button" class="btn btn-current">Anadir Carros</button></li>
+                <li><a href="update.html" class="btn btn-update">Actualizar Carros</a></li>
+                <li><a href="delete.html" class="btn btn-delete">Eliminar Carros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="results"></div>
+
+    <form id="createForm">
+        <label for="brandName">Marca:</label>
+        <select name="brandName" id="brandName">
+            <option value="1">Toyota</option>
+            <option value="2">Chevrolet</option>
+            <option value="3">Ford</option>
+            <option value="4">Tesla</option>
+        </select>
+        <label for="model">Modelo:</label>
+        <input type="text" id="model" name="model">
+        <label for="year">Año:</label>
+        <input type="date" id="year" name="year">
+        <label for="type">Tipo:</label>
+        <select name="type" id="type">
+            <option value="carro">Carro</option>
+            <option value="camioneta">Camioneta</option>
+            <option value="camion">Camion</option>
+            <option value="van">Van</option>
+            <option value="minivan">Minivan</option>
+        </select>
+        <label for="description">Descripcion:</label>
+        <textarea id="description" name="description"></textarea>
+        <button type="button" class="btn btn-create">Crear</button>
+    </form>
+
+</body>
+
+</html>
