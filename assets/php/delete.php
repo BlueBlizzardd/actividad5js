@@ -25,5 +25,3 @@ if ($delete->execute() === TRUE) {
 
 $delete->close();
 $conn->close();
-
-echo 'Peticion invalida.';
